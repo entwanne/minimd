@@ -13,9 +13,9 @@ with open('lucina/_about.py') as f:
 
 
 setup(
-    name='lucina',
+    name='minimd',
     version=about['__version__'],
-    description='From markdown to Jupyter notebook',
+    description='Minimal markdown parser',
     long_description=readme(),
     url=about['__url__'],
     author=about['__author__'],
@@ -31,9 +31,6 @@ setup(
         ]
     },
     license=about['__license__'],
-    entry_points={
-        'console_scripts': ['lucina=lucina.__main__:main'],
-    },
     classifiers=[
         'Development Status :: 1 - Planning',
     ],
