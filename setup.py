@@ -17,6 +17,7 @@ setup(
     version=about['__version__'],
     description='Minimal markdown parser',
     long_description=readme(),
+    long_description_content_type='text/markdown',
     url=about['__url__'],
     author=about['__author__'],
     author_email=about['__author_email__'],
@@ -35,6 +36,8 @@ setup(
         'console_scripts': ['minimd=minimd.__main__:main'],
     },
     classifiers=[
-        'Development Status :: 1 - Planning',
+        'Development Status :: 5 - Production/Stable',
+        'Programming Language :: Python :: 3',
+        'License :: OSI Approved :: MIT License',
     ],
 )
