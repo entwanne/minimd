@@ -1,7 +1,7 @@
 version: 2
 jobs:
   setup:
-    working_directory: ~/lucina
+    working_directory: ~/minimd
     docker:
       - image: circleci/python:3.7-stretch
     steps:
@@ -19,7 +19,7 @@ jobs:
             - ~/.venv/
 
   lint:
-    working_directory: ~/lucina
+    working_directory: ~/minimd
     docker:
       - image: circleci/python:3.7-stretch
     steps:
@@ -33,10 +33,10 @@ jobs:
       - run:
           command: |
             . ~/.venv/bin/activate
-            isort -c --diff
+            isort -c --diff .
 
   tests:
-    working_directory: ~/lucina
+    working_directory: ~/minimd
     docker:
       - image: circleci/python:3.7-stretch
     steps:
