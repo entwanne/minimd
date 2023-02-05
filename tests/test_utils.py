@@ -1,5 +1,3 @@
-import enum
-
 from minimd.utils import open_files
 
 
