@@ -1,6 +1,6 @@
-from lucina.tokenizer import Token
-from lucina.tokenizer import tokenize_file
-from lucina.tokenizer import tokenize_files
+from minimd.tokenizer import Token
+from minimd.tokenizer import tokenize_file
+from minimd.tokenizer import tokenize_files
 
 
 def test_token():

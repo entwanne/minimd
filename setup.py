@@ -7,15 +7,15 @@ def readme():
         return f.read()
 
 
-with open('lucina/_about.py') as f:
+with open('minimd/_about.py') as f:
     about = {}
     exec(f.read(), about)
 
 
 setup(
-    name='lucina',
+    name='minimd',
     version=about['__version__'],
-    description='From markdown to Jupyter notebook',
+    description='Minimal markdown parser',
     long_description=readme(),
     url=about['__url__'],
     author=about['__author__'],
@@ -32,7 +32,7 @@ setup(
     },
     license=about['__license__'],
     entry_points={
-        'console_scripts': ['lucina=lucina.__main__:main'],
+        'console_scripts': ['minimd=minimd.__main__:main'],
     },
     classifiers=[
         'Development Status :: 1 - Planning',
