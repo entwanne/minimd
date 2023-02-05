@@ -17,6 +17,7 @@ setup(
     version=about['__version__'],
     description='Minimal markdown parser',
     long_description=readme(),
+    long_description_content_type='text/markdown',
     url=about['__url__'],
     author=about['__author__'],
     author_email=about['__author_email__'],
