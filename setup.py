@@ -31,6 +31,9 @@ setup(
         ]
     },
     license=about['__license__'],
+    entry_points={
+        'console_scripts': ['minimd=minimd.__main__:main'],
+    },
     classifiers=[
         'Development Status :: 1 - Planning',
     ],
