@@ -7,7 +7,7 @@ def readme():
         return f.read()
 
 
-with open('lucina/_about.py') as f:
+with open('minimd/_about.py') as f:
     about = {}
     exec(f.read(), about)
 

@@ -1,6 +1,6 @@
 import enum
 
-from lucina.utils import open_files
+from minimd.utils import open_files
 
 
 def test_open_files(mocker):
