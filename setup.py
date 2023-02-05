@@ -35,6 +35,8 @@ setup(
         'console_scripts': ['minimd=minimd.__main__:main'],
     },
     classifiers=[
-        'Development Status :: 1 - Planning',
+        'Development Status :: 5 - Production/Stable',
+        'Programming Language :: Python :: 3',
+        'License :: OSI Approved :: MIT License',
     ],
 )
