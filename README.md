@@ -104,6 +104,6 @@ Code of the project is managed on <https://github.com/entwanne/minimd/> git repo
 
 You need to install `twine` package (`pip install twine`) to be able to deploy a version of the library.
 
-You can use `python setup.py sdist` to build the current version of the package.
+You can use `python -m build` (`pip install build`) to build the current version of the package.
 
 Then you can deploy this version to PyPI by running `twine upload dist/*`.
