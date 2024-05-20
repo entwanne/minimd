@@ -1,5 +1,0 @@
-__author__ = 'entwanne'
-__author_email__ = 'antoine.rozo@gmail.com'
-__license__ = 'MIT'
-__url__ = 'https://github.com/entwanne/minimd'
-__version__ = '1.0.1'
