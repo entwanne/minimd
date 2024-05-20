@@ -56,7 +56,6 @@ def tokenize_file(file: TextIO) -> Iterable[Token]:
         if code:
             if line.startswith('```'):
                 code = False
-                yield Token.END_CODE(line)
             else:
                 yield Token.LINE(line)
             continue
