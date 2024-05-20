@@ -3,29 +3,29 @@ jobs:
   setup:
     working_directory: ~/minimd
     docker:
-      - image: circleci/python:3.7-stretch
+      - image: cimg/python:3.12
     steps:
       - checkout
       - restore_cache:
-          key: venv-cache-{{ checksum "setup.py" }}
+          key: venv-cache-{{ checksum "pyproject.toml" }}
       - run:
           command: |
             python3 -m venv ~/.venv
             . ~/.venv/bin/activate
             pip install -e .[dev]
       - save_cache:
-          key: venv-cache-{{ checksum "setup.py" }}
+          key: venv-cache-{{ checksum "pyproject.toml" }}
           paths:
             - ~/.venv/
 
   lint:
     working_directory: ~/minimd
     docker:
-      - image: circleci/python:3.7-stretch
+      - image: cimg/python:3.12
     steps:
       - checkout
       - restore_cache:
-          key: venv-cache-{{ checksum "setup.py" }}
+          key: venv-cache-{{ checksum "pyproject.toml" }}
       - run:
           command: |
             . ~/.venv/bin/activate
@@ -38,11 +38,11 @@ jobs:
   tests:
     working_directory: ~/minimd
     docker:
-      - image: circleci/python:3.7-stretch
+      - image: cimg/python:3.12
     steps:
       - checkout
       - restore_cache:
-          key: venv-cache-{{ checksum "setup.py" }}
+          key: venv-cache-{{ checksum "pyproject.toml" }}
       - run:
           name: "Run tests"
           command: |
